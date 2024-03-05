@@ -1,12 +1,14 @@
 # Lifish+HalfKP
 
-Lifish+HalfKP is a Light chess engine based on StockFish and the evaluation based on [efficiently updateable neural networks](https://github.com/EarlyEdition/HalfKP).
+Lifish is a light chess engine based on Stockfish and the evaluation based on [efficiently updateable neural networks](https://github.com/EarlyEdition/HalfKP).
 
 List of removed features in Lifish:
 
 * Syzygy
 
 * Skill Level
+
+* Contempt
 
 * ...
 
@@ -15,7 +17,7 @@ List of removed features in Lifish:
 
 ## UCI parameters
 
-Currently, Lifish+HalfKP has the following UCI options:
+Currently, Lifish has the following UCI options:
 
   * #### Threads
     The number of CPU threads used for searching a position. For best performance, set
@@ -31,7 +33,7 @@ Currently, Lifish+HalfKP has the following UCI options:
     Assume a time delay of x ms due to network and GUI overheads. This is useful to avoid losses on time in those cases.
 
   * #### UCI_Chess960
-    An option handled by your GUI. If true, Stockfish will play Chess960.
+    An option handled by your GUI. If true, Lifish will play Chess960.
 
   * #### Use NNUE
     Toggle between the NNUE and classical evaluation functions. If set to "true", the network parameters must be availabe to load from file (see also EvalFile).
